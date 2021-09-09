@@ -41,6 +41,12 @@ class Cachorro extends Animal {
     //aqui ocorre a mudança
     print('$nome fez au au!');
   }
+
+  //podemos mostrar os atributos do cachorro  com a função toString, por exemplo:
+  @override
+  String toString() {
+    return "Cachorro | Nome: $nome, Peso: $peso, Feelicidade: $felicidade";
+  }
 }
 
 //criando uma classe gato que também herda as características de animal
@@ -62,6 +68,12 @@ class Gato extends Animal {
     //aqui ocorre a mudança
     print('$nome fez miau!');
   }
+
+  //podemos mostrar os atributos do gato com a função toString, por exemplo:
+  @override
+  String toString() {
+    return "Gato | Nome: $nome, Peso: $peso";
+  }
 }
 
 void main() {
@@ -74,6 +86,8 @@ void main() {
   cachorroUm.fazerSom();
   cachorroUm.comer();
   cachorroUm.brincar();
+  //aqui mostrará os atributos de cachorro:
+  print(cachorroUm);
 
   //exemplo com a classe gato:
   //é dado um nome e é atribuido sua formatação
@@ -83,4 +97,6 @@ void main() {
   gatoUm.comer();
   gatoUm.Amigavel();
   print("está amigável? ${gatoUm.Amigavel()}");
+  //aqui mostrará os atributos do gato:
+  print(gatoUm);
 }
