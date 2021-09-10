@@ -1,13 +1,13 @@
-//library's necess·rias para criar o app
+//library's necess√°rias para criar o app
 import 'package:flutter/material.dart';
 
-//funÁ„o principal
+//fun√ß√£o principal
 void main() {
   //comando para rodar o app: runApp(widget);
-  //widget que È o prÛpio app
-  //neste caso È um app do tipo material design
+  //widget que √© o pr√≥pio app
+  //neste caso √© um app do tipo material design
   runApp(MaterialApp(
-      //podemos colocar um tÌtulo para o app
+      //podemos colocar um t√≠tulo para o app
       title: "Contador de Pessoa",
       //colocando os widgets em modo coluna (um em cima do outro)
       home: Column(
@@ -24,10 +24,10 @@ void main() {
                 fontSize: 30.0),
           ),
 
-          //aqui ficar· uma linha no meio dos dois texto
+          //aqui ficar√° uma linha no meio dos dois textos
           Row(
             children: <Widget>[
-              //troquei o  FlatButton pois est· acusando de classe obsoleta
+              //troquei o  FlatButton pois est√° acusando de classe obsoleta
               TextButton(
                 onPressed: () {},
                 child: Text(
@@ -55,7 +55,7 @@ void main() {
           )
         ],
       )
-      //container È um local on de podemos colocar outros widgets
+      //container √© um local on de podemos colocar outros widgets
 
       ));
 }
